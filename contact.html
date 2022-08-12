@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Website</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width , initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="web.css">
+	</head>
+        <body>
+            <header>		
+                <label for="mobileMenu">	 <span tabindex="1" class="menu" >
+                    <sup class="bar"></sup>    
+ 					<sup class="bar"></sup>
+ 					<sup class="bar"></sup>
+                </span>Contact</label>
+            </header>
+            <input type="checkbox" id="mobileMenu">   <!-- (Edwards , 2017). -->
+            
+            <nav class="myMenu">
+                      <a class="allMenu" href="index.html">Home</a>
+                      <a class="allMenu" href="portfolio.html">Portfolio</a>
+                      <a class="allMenu" href="contact.html" id="tick">Contact</a>
+                      <a class="allMenu" href="blog.html">Blog</a>
+                      <a class="allMenu" href="sitereport.html">Site Report</a>         
+				</nav>
+
+                <div class="formcnt">	
+					<form method="POST" action="mailto:nabikumar430@gmail.com?subject=Form">
+						<fieldset>
+						<legend>Contact Us</legend>
+						<span>First Name:</span>
+						<input type="text" placeholder="Enter your name" name="fname" required>
+						<br>
+						<span>Last Name:</span>
+						<input type="text" placeholder="Enter your name" name="lname" required>
+						<br>
+						<span>Email:</span>
+						<input type="email" placeholder="Enter your email" name="email" required>
+						<br>
+						<span>Password:</span>
+						<input type="password" placeholder="Enter your password" required>
+						<br>
+						<span>Gender:</span>
+						<input type="radio" value="male" name="gender" required>Male
+						<input type="radio" value="female" name="gender">Female
+						<input type="radio" value="other" name="gender">Other
+						<br>
+						<input type="submit" value="Submit" id = "submit"><br><br>
+						<hr>
+                        <div class = "fimeon">Find Me On:<br>
+                           <img src="gmail.png" id="gmail" alt="Gmail Logo"><br><label>nabikumar430@gmail.com</label><br> <!-- Gmail Logo: ( [Anon.] , [n.d] ). -->
+                           <img src="address.jpg" id="address" alt="Address Logo"><br> <!-- Location Logo:( [Anon.] , [n.d] ).   -->
+                           <label> Sukhipur - 8, Siraha (Nepal) </label>
+						   <br>
+                            <img src="facebook.jpg" alt="Facebook Logo" id="facebook"> <!-- Facebook Logo :( [Anon.] , 2020). -->
+                          <br><label>Nabin Singh</label>
+                           </div>
+						</fieldset>
+					</form>
+                    </div>
+                    
+        </body>
+</html>

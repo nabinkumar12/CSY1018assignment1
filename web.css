@@ -1,0 +1,411 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+	display:grid;
+	grid-template-rows:11vh 9vh auto;
+	grid-row-gap:10px;
+	grid-column-gap:20px;
+}
+
+header{
+	font-family:sans-serif;
+	background-image: linear-gradient(to right, #868f96 0%, #596164 100%);
+	border-radius:35px;
+	padding:7px 0;
+	text-align:center;
+	font-size:45px;
+	font-weight:bolder;
+	grid-column:1/4;
+}
+
+
+/* Menu */
+
+
+.myMenu{
+	display:flex;
+    flex-direction:row;
+	grid-column:1/4;
+	font-family:sans-serif;
+	font-size:20px;
+}
+
+#mobileMenu, .menu{
+	display:none;
+}
+
+
+.allMenu{ 
+	margin:0 10px;
+	padding:1% 1%;
+    text-decoration:none;
+	color:#e4dcdc;
+	border-radius:10px;
+}
+
+#tick{
+	background-color:#737981;
+	color:#ecf0f1;
+}
+
+.allMenu:hover{
+	background-color:#737981;
+	transform:scale(1.2);
+	transition:0.2s;
+}
+
+/* Homepage */
+
+.aboutMe{
+	border:1px solid #8c78dc;
+	border-radius:20px;
+    grid-area: 3/1/4/4;
+	cursor:default;
+}
+
+.myImage{
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	float:left;
+	width:400px;
+	height:400px;
+	opacity: 0.8;
+}
+
+#descr{
+	margin-top:5%;
+	font-size:52px;
+	color:#fff;
+	font-family:sans-serif;
+	float: right;
+	margin-right: 28%;
+    letter-spacing: 3px;
+}
+
+#abtme{
+    font-size:25px;
+    color:#c5c6cd;
+	font-weight:lighter;
+    font-family:sans-serif;
+}
+
+
+/* Portfolio*/
+
+ .container{
+ 	display:grid;
+    margin-top:3%;
+ 	grid-template-columns:30% 30% 30%;
+ 	grid-template-rows:auto;
+    grid-row-gap:50px;
+    font-family: sans-serif;
+	grid-column-gap:50px;
+}
+
+
+.imageDiv{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 200px;
+	margin-left: 70px;
+	width: 200px;
+}
+
+
+.pfcnts{
+	border:2px solid #464662;
+	border-radius:10px;
+    color:#ecedf0;
+	padding-left: 10px;
+	font-size:15px;
+	box-shadow:2px 25px 15px rgba(0,0,0,0.3);
+}
+
+
+/* Contact */
+
+                                                
+fieldset{
+    border: 1px solid rgb(216, 218, 232);
+}
+
+.formcnt, legend{
+	font-size:20px;
+	color:#bdd1de;
+}
+
+input[type=text], input[type=password], input[type=email], input[type=radio]{
+	margin: 20px;
+	font-size:17px;
+	text-align:center;
+}
+
+input[type=text]{
+	width:50%;
+}
+
+input[type=email]{
+	margin-left: 75px;
+	width:50%;
+}
+
+input[type=password]{
+	margin-left: 35px;
+	width:50%;
+}
+
+
+.formcnt{
+	display:flex;
+    flex-direction:column;
+	align-items:center;
+	grid-area: 3/1/4/4;
+}
+
+
+form{
+	font-family:sans-serif;
+	font-size:20px;
+	color:#dee6d5;
+	width:53%;
+	text-align:center;
+	letter-spacing:1px;
+}
+
+
+
+.fimeon{
+	color: #acecc4;
+	font-family: sans-serif;
+	font-size:20px;
+	text-align: center;
+	height:330px;
+	margin:4% 0;
+}
+
+
+
+#address, #gmail, #facebook{
+	height:65px;
+	margin-top:3%;
+	border-radius:50%;
+}
+
+
+#submit{
+	margin: 20px 0;
+	background: #ccc;
+	font-size: 20px;
+}
+
+
+/* Blog */
+
+.blogDiv{
+	display:grid;
+    margin-top:2%;
+ 	grid-template-columns: 32% 32% 32%;
+    font-family: sans-serif;
+	grid-column-gap:25px;
+	text-align:center;
+}
+
+.blog{
+	border:1px solid cyan;
+}
+
+.blogtxt{
+	text-align:center;
+	color:rgb(243, 245, 247);
+	font-size:20px;
+
+}
+
+.blogimg{
+	width:320px;
+	height:auto;
+	margin:10px 0;
+}
+
+																/* Site Report */
+section{
+	border: 1px solid #6a6a77;
+	grid-area: 3/1/4/4;
+	font-family:sans-serif;
+}
+
+.topic:before{
+	content: " - ";
+}
+
+.topic{
+	font-size: 35px;
+	color: rgb(165, 135, 230);
+	margin: 3% 2%;
+	font-weight: lighter;
+}
+
+.date{
+	text-decoration:none;
+	text-align:center;
+	color:#eeffee;
+	font-size: 22px;
+}
+
+.define{
+	padding-left: 4%;
+	padding-right: 3%;
+	color:#cfd6cf;
+	font-size: 20px;
+}
+
+section img{
+	width: 80%;
+	height: auto;
+	margin-left: 10%;
+}
+
+.define2{
+	color: #e9e9f0b4;
+	font-size: 20px;
+	font-family: sans-serif;
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+
+.rhead:before{
+	content : " - ";
+}
+
+.rhead{
+	margin-top: 20px;
+	font-size: 23px;
+	padding-left: 60px;
+	font-family: sans-serif;
+	color: rgba(184, 186, 196, 0.911);
+}
+
+
+.ref{
+	padding-left: 4%;
+	font-size: 17px;
+	font-family: sans-serif;
+	color: #e2ece2;
+}
+
+.uses{
+	padding-left:4% ;
+	font-family: sans-serif;
+	font-size: 18px;
+	color: #e5e6e3;
+}
+
+
+/* Responsive */
+
+
+@media screen and (max-width:600px){
+	body{
+		display:grid;
+	}
+
+
+	/*Homepage*/
+
+
+	.myImage{
+		width: 480px;
+		height: auto;
+	}
+
+	#descr{
+		font-size:20px;
+	}
+	
+	 	/*Menu*/
+
+	.menu{
+		cursor:pointer;
+		width:27px;
+		display:block;
+		margin-top:15px;
+		margin-left:15px;
+		float:left;
+		height:25px;
+	}
+	
+	.bar{
+		display:block;
+		height:3px;
+		margin:5px 0;
+		background-color:#fff;
+		width:25px;
+	}
+	
+	.myMenu{
+		background-color:rgb(5, 5, 5);
+		display:none;
+		font-weight: bold;
+		border-radius:10px;
+		height:250px;
+		position: absolute;
+		top: 10%;
+	}
+
+
+	.allMenu{
+		font-size:24px;
+		border-right:5px solid rgb(122, 192, 188);
+		margin: 10px;
+		padding: 0;
+		color:rgb(249, 252, 252);
+		border-radius:1px;
+	}
+	
+	 .tick{
+		 background: #04fa7f;
+	 }
+
+	 #mobileMenu:checked + .myMenu{
+			display:block;
+			display: flex;
+		flex-direction: column;			/*  (Edwards , 2017).  */
+	}
+
+	/* Portfolio and Blog*/
+																
+	.container, .blogDiv{
+	display:flex;
+	flex-wrap:wrap;
+	}
+
+	.pfcnts{
+		width:100%;
+		margin:10px 0 10px 60px;
+	}
+
+	.blog{
+		margin:10px 0 10px 60px;
+	}
+
+	/* Contact */
+
+	.formcnt{
+		display: grid;
+		grid-template-rows: 850px;
+		margin-left: 8%;
+	}
+
+	input[type=text], input[type=password]{
+			width: 250px;
+	}
+	input[type=email]{
+		width: 300px;
+	}
+}
